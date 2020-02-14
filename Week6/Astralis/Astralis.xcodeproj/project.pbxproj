@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC162C9723F67F26002F7D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC162C9623F67F26002F7D78 /* AppDelegate.swift */; };
+		CC162C9923F67F26002F7D78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC162C9823F67F26002F7D78 /* SceneDelegate.swift */; };
+		CC162C9B23F67F26002F7D78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC162C9A23F67F26002F7D78 /* ViewController.swift */; };
+		CC162C9E23F67F26002F7D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC162C9C23F67F26002F7D78 /* Main.storyboard */; };
+		CC162CA023F67F26002F7D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC162C9F23F67F26002F7D78 /* Assets.xcassets */; };
+		CC162CA323F67F26002F7D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC162CA123F67F26002F7D78 /* LaunchScreen.storyboard */; };
+		CC162CAE23F67F26002F7D78 /* AstralisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC162CAD23F67F26002F7D78 /* AstralisTests.swift */; };
+		CC162CB923F67F26002F7D78 /* AstralisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC162CB823F67F26002F7D78 /* AstralisUITests.swift */; };
+		CC162CC723F68A30002F7D78 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC162CC623F68A30002F7D78 /* AboutViewController.swift */; };
+		CC162CC923F68DC5002F7D78 /* RosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC162CC823F68DC5002F7D78 /* RosterViewController.swift */; };
+		CC162CCB23F6A35C002F7D78 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC162CCA23F6A35C002F7D78 /* AchievementViewController.swift */; };
+		CC162CCD23F6A37C002F7D78 /* SponsorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC162CCC23F6A37C002F7D78 /* SponsorsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC162CAA23F67F26002F7D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC162C8B23F67F26002F7D78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC162C9223F67F26002F7D78;
+			remoteInfo = Astralis;
+		};
+		CC162CB523F67F26002F7D78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC162C8B23F67F26002F7D78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC162C9223F67F26002F7D78;
+			remoteInfo = Astralis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC162C9323F67F26002F7D78 /* Astralis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astralis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC162C9623F67F26002F7D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC162C9823F67F26002F7D78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC162C9A23F67F26002F7D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC162C9D23F67F26002F7D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC162C9F23F67F26002F7D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC162CA223F67F26002F7D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC162CA423F67F26002F7D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC162CA923F67F26002F7D78 /* AstralisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstralisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC162CAD23F67F26002F7D78 /* AstralisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstralisTests.swift; sourceTree = "<group>"; };
+		CC162CAF23F67F26002F7D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC162CB423F67F26002F7D78 /* AstralisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstralisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC162CB823F67F26002F7D78 /* AstralisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstralisUITests.swift; sourceTree = "<group>"; };
+		CC162CBA23F67F26002F7D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC162CC623F68A30002F7D78 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		CC162CC823F68DC5002F7D78 /* RosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosterViewController.swift; sourceTree = "<group>"; };
+		CC162CCA23F6A35C002F7D78 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		CC162CCC23F6A37C002F7D78 /* SponsorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SponsorsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC162C9023F67F26002F7D78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC162CA623F67F26002F7D78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC162CB123F67F26002F7D78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC162C8A23F67F26002F7D78 = {
+			isa = PBXGroup;
+			children = (
+				CC162C9523F67F26002F7D78 /* Astralis */,
+				CC162CAC23F67F26002F7D78 /* AstralisTests */,
+				CC162CB723F67F26002F7D78 /* AstralisUITests */,
+				CC162C9423F67F26002F7D78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC162C9423F67F26002F7D78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC162C9323F67F26002F7D78 /* Astralis.app */,
+				CC162CA923F67F26002F7D78 /* AstralisTests.xctest */,
+				CC162CB423F67F26002F7D78 /* AstralisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC162C9523F67F26002F7D78 /* Astralis */ = {
+			isa = PBXGroup;
+			children = (
+				CC162C9623F67F26002F7D78 /* AppDelegate.swift */,
+				CC162C9823F67F26002F7D78 /* SceneDelegate.swift */,
+				CC162C9A23F67F26002F7D78 /* ViewController.swift */,
+				CC162CC623F68A30002F7D78 /* AboutViewController.swift */,
+				CC162CCC23F6A37C002F7D78 /* SponsorsViewController.swift */,
+				CC162CCA23F6A35C002F7D78 /* AchievementViewController.swift */,
+				CC162CC823F68DC5002F7D78 /* RosterViewController.swift */,
+				CC162C9C23F67F26002F7D78 /* Main.storyboard */,
+				CC162C9F23F67F26002F7D78 /* Assets.xcassets */,
+				CC162CA123F67F26002F7D78 /* LaunchScreen.storyboard */,
+				CC162CA423F67F26002F7D78 /* Info.plist */,
+			);
+			path = Astralis;
+			sourceTree = "<group>";
+		};
+		CC162CAC23F67F26002F7D78 /* AstralisTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC162CAD23F67F26002F7D78 /* AstralisTests.swift */,
+				CC162CAF23F67F26002F7D78 /* Info.plist */,
+			);
+			path = AstralisTests;
+			sourceTree = "<group>";
+		};
+		CC162CB723F67F26002F7D78 /* AstralisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC162CB823F67F26002F7D78 /* AstralisUITests.swift */,
+				CC162CBA23F67F26002F7D78 /* Info.plist */,
+			);
+			path = AstralisUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC162C9223F67F26002F7D78 /* Astralis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC162CBD23F67F26002F7D78 /* Build configuration list for PBXNativeTarget "Astralis" */;
+			buildPhases = (
+				CC162C8F23F67F26002F7D78 /* Sources */,
+				CC162C9023F67F26002F7D78 /* Frameworks */,
+				CC162C9123F67F26002F7D78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Astralis;
+			productName = Astralis;
+			productReference = CC162C9323F67F26002F7D78 /* Astralis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC162CA823F67F26002F7D78 /* AstralisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC162CC023F67F26002F7D78 /* Build configuration list for PBXNativeTarget "AstralisTests" */;
+			buildPhases = (
+				CC162CA523F67F26002F7D78 /* Sources */,
+				CC162CA623F67F26002F7D78 /* Frameworks */,
+				CC162CA723F67F26002F7D78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC162CAB23F67F26002F7D78 /* PBXTargetDependency */,
+			);
+			name = AstralisTests;
+			productName = AstralisTests;
+			productReference = CC162CA923F67F26002F7D78 /* AstralisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC162CB323F67F26002F7D78 /* AstralisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC162CC323F67F26002F7D78 /* Build configuration list for PBXNativeTarget "AstralisUITests" */;
+			buildPhases = (
+				CC162CB023F67F26002F7D78 /* Sources */,
+				CC162CB123F67F26002F7D78 /* Frameworks */,
+				CC162CB223F67F26002F7D78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC162CB623F67F26002F7D78 /* PBXTargetDependency */,
+			);
+			name = AstralisUITests;
+			productName = AstralisUITests;
+			productReference = CC162CB423F67F26002F7D78 /* AstralisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC162C8B23F67F26002F7D78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Frederik Søndergaard Jensen";
+				TargetAttributes = {
+					CC162C9223F67F26002F7D78 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					CC162CA823F67F26002F7D78 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CC162C9223F67F26002F7D78;
+					};
+					CC162CB323F67F26002F7D78 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = CC162C9223F67F26002F7D78;
+					};
+				};
+			};
+			buildConfigurationList = CC162C8E23F67F26002F7D78 /* Build configuration list for PBXProject "Astralis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC162C8A23F67F26002F7D78;
+			productRefGroup = CC162C9423F67F26002F7D78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC162C9223F67F26002F7D78 /* Astralis */,
+				CC162CA823F67F26002F7D78 /* AstralisTests */,
+				CC162CB323F67F26002F7D78 /* AstralisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC162C9123F67F26002F7D78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC162CA323F67F26002F7D78 /* LaunchScreen.storyboard in Resources */,
+				CC162CA023F67F26002F7D78 /* Assets.xcassets in Resources */,
+				CC162C9E23F67F26002F7D78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC162CA723F67F26002F7D78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC162CB223F67F26002F7D78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC162C8F23F67F26002F7D78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC162CC923F68DC5002F7D78 /* RosterViewController.swift in Sources */,
+				CC162C9B23F67F26002F7D78 /* ViewController.swift in Sources */,
+				CC162CCB23F6A35C002F7D78 /* AchievementViewController.swift in Sources */,
+				CC162C9723F67F26002F7D78 /* AppDelegate.swift in Sources */,
+				CC162CC723F68A30002F7D78 /* AboutViewController.swift in Sources */,
+				CC162C9923F67F26002F7D78 /* SceneDelegate.swift in Sources */,
+				CC162CCD23F6A37C002F7D78 /* SponsorsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC162CA523F67F26002F7D78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC162CAE23F67F26002F7D78 /* AstralisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC162CB023F67F26002F7D78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC162CB923F67F26002F7D78 /* AstralisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC162CAB23F67F26002F7D78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC162C9223F67F26002F7D78 /* Astralis */;
+			targetProxy = CC162CAA23F67F26002F7D78 /* PBXContainerItemProxy */;
+		};
+		CC162CB623F67F26002F7D78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC162C9223F67F26002F7D78 /* Astralis */;
+			targetProxy = CC162CB523F67F26002F7D78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC162C9C23F67F26002F7D78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC162C9D23F67F26002F7D78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC162CA123F67F26002F7D78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC162CA223F67F26002F7D78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC162CBB23F67F26002F7D78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC162CBC23F67F26002F7D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC162CBE23F67F26002F7D78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQMSE4Y8EN;
+				INFOPLIST_FILE = Astralis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dk.SoendergaardSoftware.Astralis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC162CBF23F67F26002F7D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQMSE4Y8EN;
+				INFOPLIST_FILE = Astralis/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dk.SoendergaardSoftware.Astralis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC162CC123F67F26002F7D78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQMSE4Y8EN;
+				INFOPLIST_FILE = AstralisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dk.SoendergaardSoftware.AstralisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astralis.app/Astralis";
+			};
+			name = Debug;
+		};
+		CC162CC223F67F26002F7D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQMSE4Y8EN;
+				INFOPLIST_FILE = AstralisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dk.SoendergaardSoftware.AstralisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astralis.app/Astralis";
+			};
+			name = Release;
+		};
+		CC162CC423F67F26002F7D78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQMSE4Y8EN;
+				INFOPLIST_FILE = AstralisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dk.SoendergaardSoftware.AstralisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astralis;
+			};
+			name = Debug;
+		};
+		CC162CC523F67F26002F7D78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQMSE4Y8EN;
+				INFOPLIST_FILE = AstralisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dk.SoendergaardSoftware.AstralisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astralis;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC162C8E23F67F26002F7D78 /* Build configuration list for PBXProject "Astralis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC162CBB23F67F26002F7D78 /* Debug */,
+				CC162CBC23F67F26002F7D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC162CBD23F67F26002F7D78 /* Build configuration list for PBXNativeTarget "Astralis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC162CBE23F67F26002F7D78 /* Debug */,
+				CC162CBF23F67F26002F7D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC162CC023F67F26002F7D78 /* Build configuration list for PBXNativeTarget "AstralisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC162CC123F67F26002F7D78 /* Debug */,
+				CC162CC223F67F26002F7D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC162CC323F67F26002F7D78 /* Build configuration list for PBXNativeTarget "AstralisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC162CC423F67F26002F7D78 /* Debug */,
+				CC162CC523F67F26002F7D78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC162C8B23F67F26002F7D78 /* Project object */;
+}

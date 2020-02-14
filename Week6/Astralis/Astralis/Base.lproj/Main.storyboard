@@ -1,0 +1,979 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="str-Wm-coa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="8L6-Zv-FDn">
+            <objects>
+                <viewController id="str-Wm-coa" customClass="ViewController" customModule="Astralis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LPK-Sp-LZd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="3T1-Ml-Uyf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zW6-iB-jgb">
+                                <rect key="frame" x="106" y="602" width="210" height="36"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="ROSTER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y3p-Ez-tCg" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="YpH-G7-hPY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOl-SA-qzt">
+                                <rect key="frame" x="106" y="698" width="210" height="36"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="SPONSORS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mk5-Yu-v3L" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="BKT-Nz-lIV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0l-ac-nyf">
+                                <rect key="frame" x="106" y="554" width="210" height="36"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="ABOUT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BRb-ra-KFw" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="8Ed-03-vqF"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5Hh-bv-7dl">
+                                <rect key="frame" x="71" y="149" width="272" height="207.00000000000023"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="207" id="56P-Ga-haC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ASTRALIS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SyP-EM-Tr7">
+                                <rect key="frame" x="20" y="363" width="374" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKW-dd-421">
+                                <rect key="frame" x="106" y="650" width="210" height="36"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="ACHIEVEMENTS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="05I-Sn-2zq" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="9ra-cR-IGI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zW6-iB-jgb" firstAttribute="leading" secondItem="EKW-dd-421" secondAttribute="leading" id="2qq-pN-idH"/>
+                            <constraint firstItem="5Hh-bv-7dl" firstAttribute="leading" secondItem="sfg-7w-0Qm" secondAttribute="leading" constant="71" id="3AS-DN-c4m"/>
+                            <constraint firstItem="EKW-dd-421" firstAttribute="leading" secondItem="tOl-SA-qzt" secondAttribute="leading" id="8PH-Vk-Wqq"/>
+                            <constraint firstItem="SyP-EM-Tr7" firstAttribute="top" secondItem="5Hh-bv-7dl" secondAttribute="bottom" constant="7" id="BwB-qN-86Y"/>
+                            <constraint firstItem="3T1-Ml-Uyf" firstAttribute="centerX" secondItem="SyP-EM-Tr7" secondAttribute="centerX" id="CX7-TY-hPB"/>
+                            <constraint firstItem="5Hh-bv-7dl" firstAttribute="centerX" secondItem="SyP-EM-Tr7" secondAttribute="centerX" id="Gxn-6q-tRm"/>
+                            <constraint firstItem="EKW-dd-421" firstAttribute="trailing" secondItem="tOl-SA-qzt" secondAttribute="trailing" id="Mxe-Jx-EO7"/>
+                            <constraint firstItem="zW6-iB-jgb" firstAttribute="top" secondItem="n0l-ac-nyf" secondAttribute="bottom" constant="12" id="QG2-hl-MMN"/>
+                            <constraint firstItem="EKW-dd-421" firstAttribute="top" secondItem="zW6-iB-jgb" secondAttribute="bottom" constant="12" id="ZPf-bK-zxI"/>
+                            <constraint firstAttribute="bottom" secondItem="3T1-Ml-Uyf" secondAttribute="bottom" id="acv-EY-2Pn"/>
+                            <constraint firstItem="n0l-ac-nyf" firstAttribute="leading" secondItem="sfg-7w-0Qm" secondAttribute="leading" constant="106" id="bWV-RT-CzB"/>
+                            <constraint firstItem="SyP-EM-Tr7" firstAttribute="leading" secondItem="LPK-Sp-LZd" secondAttribute="leadingMargin" id="bfg-Wv-GhB"/>
+                            <constraint firstItem="5Hh-bv-7dl" firstAttribute="top" secondItem="sfg-7w-0Qm" secondAttribute="top" constant="105" id="c8j-nd-941"/>
+                            <constraint firstItem="sfg-7w-0Qm" firstAttribute="bottom" secondItem="tOl-SA-qzt" secondAttribute="bottom" constant="128" id="dcZ-YT-9rs"/>
+                            <constraint firstItem="zW6-iB-jgb" firstAttribute="trailing" secondItem="EKW-dd-421" secondAttribute="trailing" id="grV-cE-phE"/>
+                            <constraint firstItem="n0l-ac-nyf" firstAttribute="leading" secondItem="zW6-iB-jgb" secondAttribute="leading" id="ikr-UQ-k72"/>
+                            <constraint firstAttribute="trailing" secondItem="3T1-Ml-Uyf" secondAttribute="trailing" id="l7d-LW-JXX"/>
+                            <constraint firstItem="n0l-ac-nyf" firstAttribute="trailing" secondItem="zW6-iB-jgb" secondAttribute="trailing" id="qvR-AL-4vg"/>
+                            <constraint firstItem="tOl-SA-qzt" firstAttribute="top" secondItem="EKW-dd-421" secondAttribute="bottom" constant="12" id="tls-P4-bjy"/>
+                            <constraint firstItem="sfg-7w-0Qm" firstAttribute="trailing" secondItem="n0l-ac-nyf" secondAttribute="trailing" constant="98" id="wBF-Jk-Goq"/>
+                            <constraint firstItem="3T1-Ml-Uyf" firstAttribute="top" secondItem="LPK-Sp-LZd" secondAttribute="top" id="yfL-VV-pXW"/>
+                            <constraint firstItem="3T1-Ml-Uyf" firstAttribute="leading" secondItem="LPK-Sp-LZd" secondAttribute="leading" id="zfP-9K-LN2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sfg-7w-0Qm"/>
+                    </view>
+                    <connections>
+                        <outlet property="aboutButton" destination="n0l-ac-nyf" id="7LH-us-OFT"/>
+                        <outlet property="achievementsButton" destination="EKW-dd-421" id="mCG-Id-Uta"/>
+                        <outlet property="backgroundImage" destination="3T1-Ml-Uyf" id="0CU-72-Uhh"/>
+                        <outlet property="logoImage" destination="5Hh-bv-7dl" id="r9h-Vo-6Ge"/>
+                        <outlet property="rosterButton" destination="zW6-iB-jgb" id="4jj-a0-3Xi"/>
+                        <outlet property="sponsorsButton" destination="tOl-SA-qzt" id="BqJ-p1-y85"/>
+                        <outlet property="titleLabel" destination="SyP-EM-Tr7" id="s0B-7E-QBK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Qw-mR-Txn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+        <!--Roster View Controller-->
+        <scene sceneID="egV-KZ-tra">
+            <objects>
+                <viewController id="y3p-Ez-tCg" customClass="RosterViewController" customModule="Astralis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jzb-VK-9MR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="hHD-d3-iqY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdu-XU-IHm">
+                                <rect key="frame" x="102" y="826" width="210" height="36"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="str-Wm-coa" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Y6n-oj-183"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROSTER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpt-9G-Clw">
+                                <rect key="frame" x="117.5" y="44" width="179.5" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tt7-qY-ssF">
+                                <rect key="frame" x="49" y="163" width="316" height="570"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-jV-7Ni">
+                                        <rect key="frame" x="0.0" y="0.0" width="316" height="170"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XcE-is-hst">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="170"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Device" translatesAutoresizingMaskIntoConstraints="NO" id="kX8-ro-bGk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="136"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="128" id="2XO-Gk-SOv"/>
+                                                            <constraint firstAttribute="height" constant="136" id="7hK-G2-QYD"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nicolai Reedtz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiP-Nf-f5L">
+                                                        <rect key="frame" x="20.5" y="136" width="87" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dev1ce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwz-Qr-ql4">
+                                                        <rect key="frame" x="37.5" y="152" width="53" height="18"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UYe-U0-XXl">
+                                                <rect key="frame" x="188" y="0.0" width="128" height="170"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dupreeh" translatesAutoresizingMaskIntoConstraints="NO" id="LeN-Yl-ESj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="136"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="136" id="NGL-e1-ynZ"/>
+                                                            <constraint firstAttribute="width" constant="128" id="pqf-N0-7dU"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peter Rasmussen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-eO-PBp">
+                                                        <rect key="frame" x="11.5" y="136" width="105" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dupreeh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTn-Ik-TF6">
+                                                        <rect key="frame" x="32.5" y="152" width="63" height="18"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="DnP-KS-ujg">
+                                        <rect key="frame" x="0.0" y="200" width="316" height="170"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D6W-Pm-3N5">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="170"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="glaive" translatesAutoresizingMaskIntoConstraints="NO" id="PFD-bx-rhJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="136"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="136" id="GQc-Xe-wgo"/>
+                                                            <constraint firstAttribute="width" constant="128" id="U0e-SX-htk"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lukas Rossander" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJt-n0-5rW">
+                                                        <rect key="frame" x="12.5" y="136" width="103" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gla1ve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlY-oR-nSF">
+                                                        <rect key="frame" x="40" y="152" width="48.5" height="18"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8ht-aJ-2iV">
+                                                <rect key="frame" x="188" y="0.0" width="128" height="170"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magisk" translatesAutoresizingMaskIntoConstraints="NO" id="R29-Bk-3uQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="136"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="128" id="7Sf-jh-buK"/>
+                                                            <constraint firstAttribute="height" constant="136" id="X1b-Ts-t25"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emil Reif" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ee-Tn-8vg">
+                                                        <rect key="frame" x="38" y="136" width="52.5" height="16"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magisk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rc-Lo-RIJ">
+                                                        <rect key="frame" x="37.5" y="152" width="53" height="18"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YQQ-Lu-6Dg">
+                                        <rect key="frame" x="94" y="400" width="128" height="170"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xyp9x" translatesAutoresizingMaskIntoConstraints="NO" id="4K6-tC-vjd">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="136"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="128" id="GyW-yK-wlo"/>
+                                                    <constraint firstAttribute="height" constant="136" id="MUq-vN-cJW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Andreas Højsleth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUd-Ew-zn6">
+                                                <rect key="frame" x="12.5" y="136" width="103.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xyp9x" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhf-9Z-3Va">
+                                                <rect key="frame" x="40.5" y="152" width="47" height="18"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hHD-d3-iqY" firstAttribute="leading" secondItem="jzb-VK-9MR" secondAttribute="leading" id="1b6-pQ-vc7"/>
+                            <constraint firstItem="hHD-d3-iqY" firstAttribute="centerY" secondItem="tt7-qY-ssF" secondAttribute="centerY" id="1j4-ax-NpG"/>
+                            <constraint firstItem="Cpt-9G-Clw" firstAttribute="centerX" secondItem="tt7-qY-ssF" secondAttribute="centerX" id="NjJ-KF-f3w"/>
+                            <constraint firstItem="xdu-XU-IHm" firstAttribute="bottom" secondItem="jIP-2m-kiA" secondAttribute="bottom" id="OkT-XG-0qq"/>
+                            <constraint firstItem="hHD-d3-iqY" firstAttribute="top" secondItem="jzb-VK-9MR" secondAttribute="top" id="Sr8-d0-OgK"/>
+                            <constraint firstItem="hHD-d3-iqY" firstAttribute="centerY" secondItem="jzb-VK-9MR" secondAttribute="centerY" id="VKp-rC-r6a"/>
+                            <constraint firstAttribute="trailing" secondItem="hHD-d3-iqY" secondAttribute="trailing" id="cGf-BP-4SZ"/>
+                            <constraint firstItem="xdu-XU-IHm" firstAttribute="leading" secondItem="jIP-2m-kiA" secondAttribute="leading" constant="102" id="daa-ck-k2X"/>
+                            <constraint firstItem="hHD-d3-iqY" firstAttribute="centerX" secondItem="Cpt-9G-Clw" secondAttribute="centerX" id="fjK-TM-0tp"/>
+                            <constraint firstItem="Cpt-9G-Clw" firstAttribute="top" secondItem="jIP-2m-kiA" secondAttribute="top" id="rAG-BB-iUn"/>
+                            <constraint firstItem="tt7-qY-ssF" firstAttribute="centerX" secondItem="xdu-XU-IHm" secondAttribute="centerX" id="y6d-iX-p6e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jIP-2m-kiA"/>
+                    </view>
+                    <connections>
+                        <outlet property="rosterBackButton" destination="xdu-XU-IHm" id="0Ee-li-v1L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xhg-db-3p3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="866.66666666666674" y="-325.44642857142856"/>
+        </scene>
+        <!--Achievement View Controller-->
+        <scene sceneID="oLs-kf-N5p">
+            <objects>
+                <viewController id="05I-Sn-2zq" customClass="AchievementViewController" customModule="Astralis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kbw-RW-ljf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="XaU-J6-LfZ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACHIEVEMENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qIP-Wf-bO0">
+                                <rect key="frame" x="30.5" y="44" width="353.5" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyC-dA-n5k">
+                                <rect key="frame" x="102" y="826" width="210" height="36"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="str-Wm-coa" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Lrd-0f-ENH"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="IHK-8T-mnC">
+                                <rect key="frame" x="32" y="255" width="350" height="417"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GWT-iU-eMg">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="1st ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="- BLAST Pro Series: Global Final ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95972312179999997" green="0.95972312179999997" blue="0.95972312179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="(">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95972312179999997" green="0.95972312179999997" blue="0.95972312179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2019">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95972312179999997" green="0.95972312179999997" blue="0.95972312179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=")">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95972312179999997" green="0.95972312179999997" blue="0.95972312179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CPr-Z1-ASD">
+                                        <rect key="frame" x="0.0" y="44" width="350" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="1st ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="- StarLadder">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95972312179999997" green="0.95972312179999997" blue="0.95972312179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=":">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95972312179999997" green="0.95972312179999997" blue="0.95972312179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" Berlin Major ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95972312179999997" green="0.95972312179999997" blue="0.95972312179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="(">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95972312179999997" green="0.95972312179999997" blue="0.95972312179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2019">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95972312179999997" green="0.95972312179999997" blue="0.95972312179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=")">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.95972312179999997" green="0.95972312179999997" blue="0.95972312179999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8Ip-K1-245">
+                                        <rect key="frame" x="0.0" y="88" width="350" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="1st ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="- Intel Masters">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=":">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" Katowice Major ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="(">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2019">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=")">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xez-qf-AFd">
+                                        <rect key="frame" x="0.0" y="132" width="350" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="1st ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="- ESL Pro League Season 8 ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="(2018)">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dU4-8A-eDh">
+                                        <rect key="frame" x="0.0" y="176" width="350" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="1st ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="- Esports Championship">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" S6 (2018)">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FJI-jz-xuh">
+                                        <rect key="frame" x="0.0" y="220" width="350" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="1st ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="- FACEIT Major: London ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="(">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2018">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=")">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bM4-4G-9Yq">
+                                        <rect key="frame" x="0.0" y="264" width="350" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="1st ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="- ELEAGUE CS:GO Premier ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="(">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2018">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=")">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="u0f-pL-RN8">
+                                        <rect key="frame" x="0.0" y="308" width="350" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="1st ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="- ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Esports Championship S5 (2015)">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OLU-Jy-QFC">
+                                        <rect key="frame" x="0.0" y="352" width="350" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="1st ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="- BLAST Pro Series: Global Final ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="(">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2019">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=")">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="HAQ-WS-jsW">
+                                        <rect key="frame" x="0.0" y="396" width="350" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="1st ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.89512283785867353" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="- ELEAGUE Major: Atlanta ">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="(">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="2017">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <font key="NSOriginalFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=")">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qIP-Wf-bO0" firstAttribute="centerX" secondItem="IHK-8T-mnC" secondAttribute="centerX" id="0pp-aH-BM1"/>
+                            <constraint firstAttribute="trailing" secondItem="XaU-J6-LfZ" secondAttribute="trailing" id="BIo-QK-0fQ"/>
+                            <constraint firstItem="XaU-J6-LfZ" firstAttribute="centerY" secondItem="kbw-RW-ljf" secondAttribute="centerY" id="GSv-Bk-FeK"/>
+                            <constraint firstItem="lyC-dA-n5k" firstAttribute="leading" secondItem="U7q-0f-QRw" secondAttribute="leading" constant="102" id="KBo-wY-q2A"/>
+                            <constraint firstItem="lyC-dA-n5k" firstAttribute="bottom" secondItem="U7q-0f-QRw" secondAttribute="bottom" id="P1q-tV-PNo"/>
+                            <constraint firstItem="XaU-J6-LfZ" firstAttribute="centerX" secondItem="IHK-8T-mnC" secondAttribute="centerX" id="Pmu-zi-JqZ"/>
+                            <constraint firstItem="XaU-J6-LfZ" firstAttribute="top" secondItem="kbw-RW-ljf" secondAttribute="top" id="aRo-kv-2Vg"/>
+                            <constraint firstItem="XaU-J6-LfZ" firstAttribute="leading" secondItem="kbw-RW-ljf" secondAttribute="leading" id="b3n-6b-EvQ"/>
+                            <constraint firstItem="IHK-8T-mnC" firstAttribute="top" secondItem="kbw-RW-ljf" secondAttribute="top" constant="255" id="pPC-kz-Kr1"/>
+                            <constraint firstItem="IHK-8T-mnC" firstAttribute="leading" secondItem="U7q-0f-QRw" secondAttribute="leading" constant="32" id="x9Y-SM-Q4l"/>
+                            <constraint firstItem="qIP-Wf-bO0" firstAttribute="top" secondItem="U7q-0f-QRw" secondAttribute="top" id="xS0-Zs-wZ2"/>
+                            <constraint firstItem="IHK-8T-mnC" firstAttribute="centerX" secondItem="lyC-dA-n5k" secondAttribute="centerX" id="zi0-Cc-fWZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U7q-0f-QRw"/>
+                    </view>
+                    <connections>
+                        <outlet property="achievementBackButton" destination="lyC-dA-n5k" id="d5L-zy-cq4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOd-RO-gX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="391.74107142857139"/>
+        </scene>
+        <!--Sponsors View Controller-->
+        <scene sceneID="AEX-8I-tvE">
+            <objects>
+                <viewController id="Mk5-Yu-v3L" customClass="SponsorsViewController" customModule="Astralis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vjZ-PN-2TF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="TzP-hr-8Eo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896.00000000000045"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9r-Ob-cT0">
+                                <rect key="frame" x="102" y="826" width="210" height="36"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="str-Wm-coa" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="qrc-eN-R6L"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="SPONSORS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fYN-da-Lw7">
+                                <rect key="frame" x="82" y="44" width="251" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aGZ-Vz-StV">
+                                <rect key="frame" x="43.5" y="148" width="327" height="600"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="lml-Xs-b0d">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1572953063-jackjones" translatesAutoresizingMaskIntoConstraints="NO" id="01H-kH-pAD">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="q9F-Ag-JUu"/>
+                                                    <constraint firstAttribute="width" constant="150" id="uxS-dN-9Dm"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1572953064-logitech" translatesAutoresizingMaskIntoConstraints="NO" id="hWf-Re-Ytt">
+                                                <rect key="frame" x="177" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="BaR-Gg-eN0"/>
+                                                    <constraint firstAttribute="width" constant="150" id="LXp-A1-1MX"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="sX5-uP-fkH">
+                                        <rect key="frame" x="0.0" y="150" width="327" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1572953065-omen" translatesAutoresizingMaskIntoConstraints="NO" id="vZy-KE-7ti">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="BHV-na-npi"/>
+                                                    <constraint firstAttribute="width" constant="150" id="VhN-ga-gNG"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1572953066-secretlab" translatesAutoresizingMaskIntoConstraints="NO" id="GmE-Xn-c32">
+                                                <rect key="frame" x="177" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="9Fg-lB-sWb"/>
+                                                    <constraint firstAttribute="width" constant="150" id="H9j-UO-2ED"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="28i-j9-WGT">
+                                        <rect key="frame" x="0.0" y="300" width="327" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1572953066-turtlebeach" translatesAutoresizingMaskIntoConstraints="NO" id="STH-KJ-DLg">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="5h0-2D-rmK"/>
+                                                    <constraint firstAttribute="width" constant="150" id="cd5-FH-zfs"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1572953067-unibet" translatesAutoresizingMaskIntoConstraints="NO" id="bcO-nw-e2z">
+                                                <rect key="frame" x="177" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="1XO-si-i26"/>
+                                                    <constraint firstAttribute="width" constant="150" id="Nk5-xs-5FX"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="o46-a4-0TY">
+                                        <rect key="frame" x="0.0" y="450" width="327" height="150"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1580917464-csdotmoney-1" translatesAutoresizingMaskIntoConstraints="NO" id="UNR-CD-oou">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.00000000000023" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="LmP-AW-Sy4"/>
+                                                    <constraint firstAttribute="width" constant="150" id="bCX-eO-IWZ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1580917657-glhf-logowhitev03" translatesAutoresizingMaskIntoConstraints="NO" id="94P-ta-4hI">
+                                                <rect key="frame" x="177" y="0.0" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="fmd-Kr-D9s"/>
+                                                    <constraint firstAttribute="height" constant="150" id="mqv-yG-MDt"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TzP-hr-8Eo" secondAttribute="trailing" id="420-fW-znL"/>
+                            <constraint firstItem="W9r-Ob-cT0" firstAttribute="leading" secondItem="Mtr-Uc-tMZ" secondAttribute="leading" constant="102" id="7XU-bX-xUY"/>
+                            <constraint firstItem="TzP-hr-8Eo" firstAttribute="centerX" secondItem="aGZ-Vz-StV" secondAttribute="centerX" id="QHO-0L-ykI"/>
+                            <constraint firstItem="TzP-hr-8Eo" firstAttribute="leading" secondItem="vjZ-PN-2TF" secondAttribute="leading" id="UNT-gk-aGd"/>
+                            <constraint firstItem="fYN-da-Lw7" firstAttribute="top" secondItem="Mtr-Uc-tMZ" secondAttribute="top" id="X5q-Mh-XcX"/>
+                            <constraint firstItem="W9r-Ob-cT0" firstAttribute="bottom" secondItem="Mtr-Uc-tMZ" secondAttribute="bottom" id="Xoc-pz-xv0"/>
+                            <constraint firstItem="aGZ-Vz-StV" firstAttribute="centerX" secondItem="W9r-Ob-cT0" secondAttribute="centerX" id="ZHt-au-WRs"/>
+                            <constraint firstItem="TzP-hr-8Eo" firstAttribute="top" secondItem="vjZ-PN-2TF" secondAttribute="top" id="dgj-Nd-aCX"/>
+                            <constraint firstItem="TzP-hr-8Eo" firstAttribute="centerY" secondItem="vjZ-PN-2TF" secondAttribute="centerY" id="fjN-oy-lqt"/>
+                            <constraint firstItem="fYN-da-Lw7" firstAttribute="leading" secondItem="Mtr-Uc-tMZ" secondAttribute="leading" constant="82" id="g2u-TA-TX0"/>
+                            <constraint firstItem="TzP-hr-8Eo" firstAttribute="centerY" secondItem="aGZ-Vz-StV" secondAttribute="centerY" id="kur-Wk-69c"/>
+                            <constraint firstItem="fYN-da-Lw7" firstAttribute="centerX" secondItem="aGZ-Vz-StV" secondAttribute="centerX" id="nrR-0Y-z1m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mtr-Uc-tMZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="sponsorsBackButton" destination="W9r-Ob-cT0" id="kv0-Rq-cs7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NxA-wd-a41" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1624.6376811594205" y="172.76785714285714"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="tPw-Ri-JZz">
+            <objects>
+                <viewController id="BRb-ra-KFw" customClass="AboutViewController" customModule="Astralis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lmf-bp-teD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="fDh-5Z-cnP">
+                                <rect key="frame" x="0.0" y="1" width="414" height="894.00000000000045"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyZ-Ry-eWw">
+                                <rect key="frame" x="102" y="826" width="210" height="36"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="az9-6o-NFF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="str-Wm-coa" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="zju-YM-aPE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0I-NK-JId">
+                                <rect key="frame" x="128" y="44" width="158" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEC-Ui-ojK">
+                                <rect key="frame" x="20" y="155" width="374" height="586"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Astralis is a Danish esports organization owned by players of the former Danish Team SoloMid/Questionmark lineup, with the help of their manager, Frederik "realition" Byskov.
+
+The rights to the Astralis name were obtained from the original founders of the Finnish Counter-Strike: Global Offensive team. 
+
+Even though Astralis started out as a player owned organisation, they are no longer owners themselves. The owners of Astralis is the parent company Astralis group</string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fDh-5Z-cnP" firstAttribute="top" secondItem="lmf-bp-teD" secondAttribute="topMargin" constant="-43" id="0eL-WQ-6yM"/>
+                            <constraint firstItem="fDh-5Z-cnP" firstAttribute="leading" secondItem="lmf-bp-teD" secondAttribute="leading" id="31L-bZ-tHd"/>
+                            <constraint firstAttribute="trailing" secondItem="fDh-5Z-cnP" secondAttribute="trailing" id="4C4-uj-4ck"/>
+                            <constraint firstItem="TyZ-Ry-eWw" firstAttribute="bottom" secondItem="jV4-8K-RMc" secondAttribute="bottom" id="NPR-9i-Vd7"/>
+                            <constraint firstItem="fDh-5Z-cnP" firstAttribute="centerX" secondItem="TyZ-Ry-eWw" secondAttribute="centerX" id="OqR-PX-TiC"/>
+                            <constraint firstItem="gEC-Ui-ojK" firstAttribute="centerX" secondItem="TyZ-Ry-eWw" secondAttribute="centerX" id="XqB-n9-hfQ"/>
+                            <constraint firstItem="fDh-5Z-cnP" firstAttribute="centerY" secondItem="gEC-Ui-ojK" secondAttribute="centerY" id="afn-Nk-jHW"/>
+                            <constraint firstItem="TyZ-Ry-eWw" firstAttribute="top" secondItem="gEC-Ui-ojK" secondAttribute="bottom" constant="85" id="d5g-mH-BXx"/>
+                            <constraint firstItem="gEC-Ui-ojK" firstAttribute="leading" secondItem="lmf-bp-teD" secondAttribute="leadingMargin" id="evc-Ku-v4S"/>
+                            <constraint firstItem="H0I-NK-JId" firstAttribute="top" secondItem="jV4-8K-RMc" secondAttribute="top" id="fod-gN-eBY"/>
+                            <constraint firstItem="gEC-Ui-ojK" firstAttribute="top" secondItem="H0I-NK-JId" secondAttribute="bottom" constant="58" id="rXF-mF-tHq"/>
+                            <constraint firstItem="fDh-5Z-cnP" firstAttribute="centerY" secondItem="lmf-bp-teD" secondAttribute="centerY" id="xBh-xv-fPx"/>
+                            <constraint firstItem="H0I-NK-JId" firstAttribute="centerX" secondItem="gEC-Ui-ojK" secondAttribute="centerX" id="xmH-Bi-jh3"/>
+                            <constraint firstItem="TyZ-Ry-eWw" firstAttribute="leading" secondItem="jV4-8K-RMc" secondAttribute="leading" constant="102" id="yin-37-LNl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jV4-8K-RMc"/>
+                    </view>
+                    <connections>
+                        <outlet property="aboutBackButton" destination="TyZ-Ry-eWw" id="Rbm-hq-c2E"/>
+                        <outlet property="aboutBackgroundImage" destination="fDh-5Z-cnP" id="HYj-0r-VmM"/>
+                        <outlet property="aboutDescriptionLabel" destination="gEC-Ui-ojK" id="qFr-Qa-Zzh"/>
+                        <outlet property="aboutTitleLabel" destination="H0I-NK-JId" id="C6I-ja-QHb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5te-ic-g6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="-362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1572953063-jackjones" width="400" height="45"/>
+        <image name="1572953064-logitech" width="319" height="80"/>
+        <image name="1572953065-omen" width="326" height="70"/>
+        <image name="1572953066-secretlab" width="300" height="95"/>
+        <image name="1572953066-turtlebeach" width="200" height="166"/>
+        <image name="1572953067-unibet" width="250" height="89"/>
+        <image name="1580917464-csdotmoney-1" width="857" height="133"/>
+        <image name="1580917657-glhf-logowhitev03" width="157" height="247"/>
+        <image name="Background" width="2500" height="1667"/>
+        <image name="Device" width="600" height="900"/>
+        <image name="Logo" width="1200" height="1458"/>
+        <image name="dupreeh" width="600" height="900"/>
+        <image name="glaive" width="600" height="900"/>
+        <image name="magisk" width="600" height="900"/>
+        <image name="xyp9x" width="600" height="900"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="qrc-eN-R6L"/>
+    </inferredMetricsTieBreakers>
+</document>
