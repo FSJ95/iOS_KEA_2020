@@ -37,44 +37,7 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDelegate,
         loadNoteFile()
     }
     
-    // Remove the placeholder when editing begins
-    func textViewDidBeginEditing(_ textView: UITextView) {
-        if textView.textColor == UIColor.lightGray {
-                textView.text = nil
-                textView.textColor = UIColor.black
-        }
-    }
-    
-    // Number of cells in tableview.
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return noteArray.count
-    }
-    
-    // Populate each cell in the tableview.
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "notecell")
-        cell?.textLabel?.text = noteArray[indexPath.row]
-        return cell!
-    }
-    
-    @IBAction func saveButtonTapped(_ sender: Any) {
-        inputTextView.endEditing(true)
-        
-        
-        if inputTextView.textColor != UIColor.lightGray {
-            let inputText = inputTextView.text
-            noteArray.reverse()
-            noteArray.append(inputText ?? "")
-            noteArray.reverse()
-             
-            saveNoteFile()
-            
-            // Return to the 'placeholder' state.
-            inputTextView.text = notePlaceholder
-            inputTextView.textColor = UIColor.lightGray
-        }
-        
-    }
+    // MARK: FUNCTIONS
     
     // Loading the notefile
     func loadNoteFile() {
@@ -99,6 +62,28 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDelegate,
         loadNoteFile()
     }
     
+    // MARK: BUTTON
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        inputTextView.endEditing(true)
+        
+        
+        if inputTextView.textColor != UIColor.lightGray {
+            let inputText = inputTextView.text
+            noteArray.reverse()
+            noteArray.append(inputText ?? "")
+            noteArray.reverse()
+             
+            saveNoteFile()
+            
+            // Return to the 'placeholder' state.
+            inputTextView.text = notePlaceholder
+            inputTextView.textColor = UIColor.lightGray
+        }
+        
+    }
+    
+    // MARK: TABLEVIEW
+    
     //delete function, swipe on the item to delete
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
       if editingStyle == .delete {
@@ -107,5 +92,26 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDelegate,
       }
     }
     
+    // Number of cells in tableview.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return noteArray.count
+    }
+    
+    // Populate each cell in the tableview.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "notecell")
+        cell?.textLabel?.text = noteArray[indexPath.row]
+        return cell!
+    }
+    
+    // MARK: TEXTVIEW
+    
+    // Remove the placeholder when editing begins
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.lightGray {
+                textView.text = nil
+                textView.textColor = UIColor.black
+        }
+    }
 }
 
