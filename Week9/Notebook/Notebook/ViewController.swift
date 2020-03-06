@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController, UITextViewDelegate, UITableViewDelegate, UITableViewDataSource {
     
@@ -15,11 +16,13 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDelegate,
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var noteTableView: UITableView!
     
-    let fileLocationPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("notefile.txt")
     var noteArray = [String]()
-    let noteSeperator = "\n***\n"
+    var titleArray = [String]()
+    
     let notePlaceholder = "Type your notes in here :)"
-
+    
+    var db: Firestore!
+    var usr: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,32 +37,35 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDelegate,
         inputTextView.text = notePlaceholder
         inputTextView.textColor = UIColor.lightGray
         
+        Auth.auth().signInAnonymously() { (authResult, error) in
+        }
+        usr = Auth.auth().currentUser
+        
+        db = Firestore.firestore()
+        
         loadNoteFile()
+        
     }
     
     // MARK: FUNCTIONS
     
+
     // Loading the notefile
     func loadNoteFile() {
-        do {
-            let string = try String(contentsOf: fileLocationPath, encoding: .utf8)
-            noteArray = string.components(separatedBy: noteSeperator)
-            print(noteArray)
-        } catch  {
-            print("Error loading the file")
+        noteArray = [String]()
+        db.collection("users").document(usr.uid).collection("messages").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    self.noteArray.append(document.data()["message"] as! String)
+                    self.titleArray.append(document.documentID)
+                    
+                }
+                self.noteTableView.reloadData()
+            }
         }
-        noteTableView.reloadData()
-    }
-    
-    // Saving to notefile
-    func saveNoteFile() {
-        let fullNoteString = noteArray.joined(separator: noteSeperator)
-        do {
-            try fullNoteString.write(to: fileLocationPath, atomically: true, encoding: String.Encoding.utf8)
-        } catch {
-            print("Error writing to file")
-        }
-        loadNoteFile()
+        
     }
     
     // MARK: BUTTON
@@ -69,11 +75,17 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDelegate,
         
         if inputTextView.textColor != UIColor.lightGray {
             let inputText = inputTextView.text
-            noteArray.reverse()
-            noteArray.append(inputText ?? "")
-            noteArray.reverse()
+            db.collection("users").document(usr.uid).collection("messages").document().setData([
+                "message": inputText!,
+            ]) { err in
+                if let err = err {
+                    print("Error writing document: \(err)")
+                } else {
+                    print("Document successfully written!")
+                }
+            }
              
-            saveNoteFile()
+            loadNoteFile()
             
             // Return to the 'placeholder' state.
             inputTextView.text = notePlaceholder
@@ -88,7 +100,14 @@ class ViewController: UIViewController, UITextViewDelegate, UITableViewDelegate,
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
       if editingStyle == .delete {
         self.noteArray.remove(at: indexPath.row)
-        saveNoteFile()
+        db.collection("users").document(usr.uid).collection("messages").document(titleArray[indexPath.row]).delete() { err in
+            if let err = err {
+                print("Error removing document: \(err)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+        loadNoteFile()
       }
     }
     

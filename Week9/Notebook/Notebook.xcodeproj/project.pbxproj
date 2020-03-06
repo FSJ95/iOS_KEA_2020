@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F30CC786CC81A70D5472E4D /* Pods_NotebookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D1C0DB1B0978B383771979 /* Pods_NotebookTests.framework */; };
+		3C1785CF036E25752DCEC9D1 /* Pods_Notebook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60D84611777AA16E44870C2 /* Pods_Notebook.framework */; };
+		BB0488DA6A782CC8F675F7BE /* Pods_Notebook_NotebookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003788A0E820C601659F8AA1 /* Pods_Notebook_NotebookUITests.framework */; };
+		CCD053042412597B00EE6FDB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCD053032412597B00EE6FDB /* GoogleService-Info.plist */; };
 		CCE1212D23FFF9F500453E09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1212C23FFF9F500453E09 /* AppDelegate.swift */; };
 		CCE1212F23FFF9F500453E09 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1212E23FFF9F500453E09 /* SceneDelegate.swift */; };
 		CCE1213123FFF9F500453E09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE1213023FFF9F500453E09 /* ViewController.swift */; };
@@ -35,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		003788A0E820C601659F8AA1 /* Pods_Notebook_NotebookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notebook_NotebookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18960C3460835C14B571B589 /* Pods-Notebook-NotebookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notebook-NotebookUITests.debug.xcconfig"; path = "Target Support Files/Pods-Notebook-NotebookUITests/Pods-Notebook-NotebookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DFBFCA2EF92DE63C498E3D2 /* Pods-NotebookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotebookTests.debug.xcconfig"; path = "Target Support Files/Pods-NotebookTests/Pods-NotebookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4D1C0DB1B0978B383771979 /* Pods_NotebookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotebookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41F3C57109471F18FB25E64 /* Pods-Notebook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notebook.release.xcconfig"; path = "Target Support Files/Pods-Notebook/Pods-Notebook.release.xcconfig"; sourceTree = "<group>"; };
+		B9F664C9744EA078603EC2D3 /* Pods-NotebookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotebookTests.release.xcconfig"; path = "Target Support Files/Pods-NotebookTests/Pods-NotebookTests.release.xcconfig"; sourceTree = "<group>"; };
+		CCD053032412597B00EE6FDB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCE1212923FFF9F500453E09 /* Notebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE1212C23FFF9F500453E09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCE1212E23FFF9F500453E09 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		CCE1214A23FFF9F600453E09 /* NotebookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotebookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE1214E23FFF9F600453E09 /* NotebookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotebookUITests.swift; sourceTree = "<group>"; };
 		CCE1215023FFF9F600453E09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF7DBB30862A7FBDBA1DF7BF /* Pods-Notebook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notebook.debug.xcconfig"; path = "Target Support Files/Pods-Notebook/Pods-Notebook.debug.xcconfig"; sourceTree = "<group>"; };
+		F60D84611777AA16E44870C2 /* Pods_Notebook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Notebook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABEDD9BFD0766110358CAE4 /* Pods-Notebook-NotebookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notebook-NotebookUITests.release.xcconfig"; path = "Target Support Files/Pods-Notebook-NotebookUITests/Pods-Notebook-NotebookUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C1785CF036E25752DCEC9D1 /* Pods_Notebook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F30CC786CC81A70D5472E4D /* Pods_NotebookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0488DA6A782CC8F675F7BE /* Pods_Notebook_NotebookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0537660FC57297D2ADCEBAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF7DBB30862A7FBDBA1DF7BF /* Pods-Notebook.debug.xcconfig */,
+				B41F3C57109471F18FB25E64 /* Pods-Notebook.release.xcconfig */,
+				18960C3460835C14B571B589 /* Pods-Notebook-NotebookUITests.debug.xcconfig */,
+				FABEDD9BFD0766110358CAE4 /* Pods-Notebook-NotebookUITests.release.xcconfig */,
+				2DFBFCA2EF92DE63C498E3D2 /* Pods-NotebookTests.debug.xcconfig */,
+				B9F664C9744EA078603EC2D3 /* Pods-NotebookTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CCE1212023FFF9F500453E09 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +114,8 @@
 				CCE1214223FFF9F600453E09 /* NotebookTests */,
 				CCE1214D23FFF9F600453E09 /* NotebookUITests */,
 				CCE1212A23FFF9F500453E09 /* Products */,
+				B0537660FC57297D2ADCEBAD /* Pods */,
+				EE1419CD8A69164653F85A00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +139,7 @@
 				CCE1213523FFF9F600453E09 /* Assets.xcassets */,
 				CCE1213723FFF9F600453E09 /* LaunchScreen.storyboard */,
 				CCE1213A23FFF9F600453E09 /* Info.plist */,
+				CCD053032412597B00EE6FDB /* GoogleService-Info.plist */,
 			);
 			path = Notebook;
 			sourceTree = "<group>";
@@ -128,6 +162,16 @@
 			path = NotebookUITests;
 			sourceTree = "<group>";
 		};
+		EE1419CD8A69164653F85A00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F60D84611777AA16E44870C2 /* Pods_Notebook.framework */,
+				003788A0E820C601659F8AA1 /* Pods_Notebook_NotebookUITests.framework */,
+				A4D1C0DB1B0978B383771979 /* Pods_NotebookTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCE1215323FFF9F600453E09 /* Build configuration list for PBXNativeTarget "Notebook" */;
 			buildPhases = (
+				86D2C6CE6AAEF7C822BA0CDA /* [CP] Check Pods Manifest.lock */,
 				CCE1212523FFF9F500453E09 /* Sources */,
 				CCE1212623FFF9F500453E09 /* Frameworks */,
 				CCE1212723FFF9F500453E09 /* Resources */,
+				470CAB134841ACCDC6139FC0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCE1215623FFF9F600453E09 /* Build configuration list for PBXNativeTarget "NotebookTests" */;
 			buildPhases = (
+				FC57A15666A2DEF1A2BED513 /* [CP] Check Pods Manifest.lock */,
 				CCE1213B23FFF9F600453E09 /* Sources */,
 				CCE1213C23FFF9F600453E09 /* Frameworks */,
 				CCE1213D23FFF9F600453E09 /* Resources */,
@@ -170,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCE1215923FFF9F600453E09 /* Build configuration list for PBXNativeTarget "NotebookUITests" */;
 			buildPhases = (
+				8FA0A9BB260BB60CBF33FC44 /* [CP] Check Pods Manifest.lock */,
 				CCE1214623FFF9F600453E09 /* Sources */,
 				CCE1214723FFF9F600453E09 /* Frameworks */,
 				CCE1214823FFF9F600453E09 /* Resources */,
+				E477A9E370BB473FC434C519 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCE1213923FFF9F600453E09 /* LaunchScreen.storyboard in Resources */,
+				CCD053042412597B00EE6FDB /* GoogleService-Info.plist in Resources */,
 				CCE1213623FFF9F600453E09 /* Assets.xcassets in Resources */,
 				CCE1213423FFF9F500453E09 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +303,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		470CAB134841ACCDC6139FC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notebook/Pods-Notebook-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notebook/Pods-Notebook-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Notebook/Pods-Notebook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86D2C6CE6AAEF7C822BA0CDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notebook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FA0A9BB260BB60CBF33FC44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Notebook-NotebookUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E477A9E370BB473FC434C519 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notebook-NotebookUITests/Pods-Notebook-NotebookUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Notebook-NotebookUITests/Pods-Notebook-NotebookUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Notebook-NotebookUITests/Pods-Notebook-NotebookUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC57A15666A2DEF1A2BED513 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotebookTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCE1212523FFF9F500453E09 /* Sources */ = {
@@ -432,6 +585,7 @@
 		};
 		CCE1215423FFF9F600453E09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7DBB30862A7FBDBA1DF7BF /* Pods-Notebook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +604,7 @@
 		};
 		CCE1215523FFF9F600453E09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B41F3C57109471F18FB25E64 /* Pods-Notebook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +623,7 @@
 		};
 		CCE1215723FFF9F600453E09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DFBFCA2EF92DE63C498E3D2 /* Pods-NotebookTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +646,7 @@
 		};
 		CCE1215823FFF9F600453E09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F664C9744EA078603EC2D3 /* Pods-NotebookTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +669,7 @@
 		};
 		CCE1215A23FFF9F600453E09 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18960C3460835C14B571B589 /* Pods-Notebook-NotebookUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +690,7 @@
 		};
 		CCE1215B23FFF9F600453E09 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABEDD9BFD0766110358CAE4 /* Pods-Notebook-NotebookUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
