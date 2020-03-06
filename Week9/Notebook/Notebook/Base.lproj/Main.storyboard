@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Po-Kf-h5D">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HiF-Fz-YjF">
+            <objects>
+                <viewController id="3Po-Kf-h5D" customClass="ViewController" customModule="Notebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JaA-LW-i5S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="36v-Ua-VeN">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTEBOOK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7c-Ig-fkz">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="44"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mri-Bv-fPe">
+                                        <rect key="frame" x="0.0" y="63" width="374" height="150"/>
+                                        <color key="backgroundColor" red="0.92225955309999996" green="0.92225955309999996" blue="0.92225955309999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="jmD-LD-wW8"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wlb-eA-Mhm">
+                                        <rect key="frame" x="0.0" y="223" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NXV-tt-fx6"/>
+                                        </constraints>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveButtonTapped:" destination="3Po-Kf-h5D" eventType="touchUpInside" id="lKT-D9-I14"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="okP-e1-QX5">
+                                        <rect key="frame" x="0.0" y="283" width="374" height="535"/>
+                                        <color key="backgroundColor" red="0.92225955309999996" green="0.92225955309999996" blue="0.92225955309999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="notecell" textLabel="OQu-DX-v0k" style="IBUITableViewCellStyleDefault" id="18c-TD-Ug5">
+                                                <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="18c-TD-Ug5" id="hJg-RK-aZa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OQu-DX-v0k">
+                                                            <rect key="frame" x="20" y="0.0" width="334" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.92225955309999996" green="0.92225955309999996" blue="0.92225955309999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <sections/>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Mri-Bv-fPe" firstAttribute="leading" secondItem="36v-Ua-VeN" secondAttribute="leading" id="O5p-bh-hjP"/>
+                                    <constraint firstItem="F7c-Ig-fkz" firstAttribute="width" secondItem="Mri-Bv-fPe" secondAttribute="width" id="Stp-fH-EpE"/>
+                                    <constraint firstItem="Wlb-eA-Mhm" firstAttribute="width" secondItem="Mri-Bv-fPe" secondAttribute="width" id="pWL-gS-dB8"/>
+                                    <constraint firstItem="okP-e1-QX5" firstAttribute="width" secondItem="Mri-Bv-fPe" secondAttribute="width" id="wcc-qv-pJq"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rev-80-R34" firstAttribute="bottom" secondItem="36v-Ua-VeN" secondAttribute="bottom" id="E3G-fk-Q22"/>
+                            <constraint firstItem="Rev-80-R34" firstAttribute="trailing" secondItem="36v-Ua-VeN" secondAttribute="trailing" constant="20" id="M4f-f3-i1j"/>
+                            <constraint firstItem="36v-Ua-VeN" firstAttribute="leading" secondItem="Rev-80-R34" secondAttribute="leading" constant="20" id="TgS-0Q-kXC"/>
+                            <constraint firstItem="36v-Ua-VeN" firstAttribute="top" secondItem="Rev-80-R34" secondAttribute="top" id="mjK-fS-BuC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rev-80-R34"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextView" destination="Mri-Bv-fPe" id="LgS-HX-96V"/>
+                        <outlet property="noteTableView" destination="okP-e1-QX5" id="YgB-Yx-ZfR"/>
+                        <outlet property="saveButton" destination="Wlb-eA-Mhm" id="vQi-fa-yN0"/>
+                        <outlet property="titleLabel" destination="F7c-Ig-fkz" id="utC-BA-fSk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBM-cM-FX1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+</document>
