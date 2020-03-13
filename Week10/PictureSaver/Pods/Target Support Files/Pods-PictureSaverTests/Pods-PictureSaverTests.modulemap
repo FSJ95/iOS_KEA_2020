@@ -1,0 +1,6 @@
+framework module Pods_PictureSaverTests {
+  umbrella header "Pods-PictureSaverTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

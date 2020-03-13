@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>487830676938-2vh9c0ovd1jip8h4e36kl9fegd9m3889.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.487830676938-2vh9c0ovd1jip8h4e36kl9fegd9m3889</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBby8fyO8kqrroqLjD6wXl3m8MgcUlPKJM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>487830676938</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>dk.SoendergaardSoftware.PictureSaver</string>
+	<key>PROJECT_ID</key>
+	<string>picturesaver-f6310</string>
+	<key>STORAGE_BUCKET</key>
+	<string>picturesaver-f6310.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:487830676938:ios:959ba69dbd877e086fdb33</string>
+	<key>DATABASE_URL</key>
+	<string>https://picturesaver-f6310.firebaseio.com</string>
+</dict>
+</plist>

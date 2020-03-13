@@ -60,5 +60,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Want to take sick pictures.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Want to import sick pictures.</string>
 </dict>
 </plist>
