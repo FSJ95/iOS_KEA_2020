@@ -12,6 +12,10 @@
 		826A02477CCD838C7CCF627E /* Pods_PictureSaverTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EB0A21CFF56A5F0CF0C31A5 /* Pods_PictureSaverTests.framework */; };
 		CC509C2F241BCACC00A0BC8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC509C2E241BCACC00A0BC8F /* GoogleService-Info.plist */; };
 		CC509C31241BCE0900A0BC8F /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC509C30241BCE0900A0BC8F /* ImagesViewController.swift */; };
+		CC6FBD93241FC19C008FE7A4 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6FBD91241FC19C008FE7A4 /* NoteCell.swift */; };
+		CC6FBD94241FC19C008FE7A4 /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6FBD92241FC19C008FE7A4 /* NoteCell.xib */; };
+		CC6FBD9E241FEAEC008FE7A4 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6FBD9D241FEAEC008FE7A4 /* FirebaseModel.swift */; };
+		CC6FBDA1241FEB1C008FE7A4 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6FBDA0241FEB1C008FE7A4 /* FirebaseHelper.swift */; };
 		CCB69F2224128ADA00D039ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB69F2124128ADA00D039ED /* AppDelegate.swift */; };
 		CCB69F2424128ADA00D039ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB69F2324128ADA00D039ED /* SceneDelegate.swift */; };
 		CCB69F2624128ADA00D039ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB69F2524128ADA00D039ED /* ViewController.swift */; };
@@ -20,6 +24,7 @@
 		CCB69F2E24128ADC00D039ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB69F2C24128ADC00D039ED /* LaunchScreen.storyboard */; };
 		CCB69F3924128ADC00D039ED /* PictureSaverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB69F3824128ADC00D039ED /* PictureSaverTests.swift */; };
 		CCB69F4424128ADD00D039ED /* PictureSaverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB69F4324128ADD00D039ED /* PictureSaverUITests.swift */; };
+		CCC8AD2E2420C9EF00FF44AA /* noteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8AD2D2420C9EF00FF44AA /* noteModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +55,10 @@
 		A0DA17A76FFA474094CBC2DA /* Pods_PictureSaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PictureSaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC509C2E241BCACC00A0BC8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC509C30241BCE0900A0BC8F /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		CC6FBD91241FC19C008FE7A4 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		CC6FBD92241FC19C008FE7A4 /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
+		CC6FBD9D241FEAEC008FE7A4 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
+		CC6FBDA0241FEB1C008FE7A4 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
 		CCB69F1E24128ADA00D039ED /* PictureSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB69F2124128ADA00D039ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCB69F2324128ADA00D039ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +73,7 @@
 		CCB69F3F24128ADD00D039ED /* PictureSaverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureSaverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB69F4324128ADD00D039ED /* PictureSaverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSaverUITests.swift; sourceTree = "<group>"; };
 		CCB69F4524128ADD00D039ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC8AD2D2420C9EF00FF44AA /* noteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteModel.swift; sourceTree = "<group>"; };
 		E3D508B35BA26F94960A697C /* Pods_PictureSaver_PictureSaverUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PictureSaver_PictureSaverUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,6 +115,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CC6FBD9B241FEAA8008FE7A4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CCB69F2724128ADA00D039ED /* Main.storyboard */,
+				CC6FBD91241FC19C008FE7A4 /* NoteCell.swift */,
+				CC6FBD92241FC19C008FE7A4 /* NoteCell.xib */,
+				CCB69F2C24128ADC00D039ED /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC6FBD9C241FEABB008FE7A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CCB69F2524128ADA00D039ED /* ViewController.swift */,
+				CC509C30241BCE0900A0BC8F /* ImagesViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CC6FBD9F241FEB07008FE7A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC6FBD9D241FEAEC008FE7A4 /* FirebaseModel.swift */,
+				CCC8AD2D2420C9EF00FF44AA /* noteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC6FBDA2241FEB20008FE7A4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CC6FBDA0241FEB1C008FE7A4 /* FirebaseHelper.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		CCB69F1524128ADA00D039ED = {
 			isa = PBXGroup;
 			children = (
@@ -132,11 +179,11 @@
 			children = (
 				CCB69F2124128ADA00D039ED /* AppDelegate.swift */,
 				CCB69F2324128ADA00D039ED /* SceneDelegate.swift */,
-				CCB69F2524128ADA00D039ED /* ViewController.swift */,
-				CC509C30241BCE0900A0BC8F /* ImagesViewController.swift */,
-				CCB69F2724128ADA00D039ED /* Main.storyboard */,
+				CC6FBDA2241FEB20008FE7A4 /* Service */,
+				CC6FBD9C241FEABB008FE7A4 /* Controller */,
+				CC6FBD9F241FEB07008FE7A4 /* Model */,
+				CC6FBD9B241FEAA8008FE7A4 /* View */,
 				CCB69F2A24128ADC00D039ED /* Assets.xcassets */,
-				CCB69F2C24128ADC00D039ED /* LaunchScreen.storyboard */,
 				CCB69F2F24128ADC00D039ED /* Info.plist */,
 				CC509C2E241BCACC00A0BC8F /* GoogleService-Info.plist */,
 			);
@@ -283,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6FBD94241FC19C008FE7A4 /* NoteCell.xib in Resources */,
 				CCB69F2E24128ADC00D039ED /* LaunchScreen.storyboard in Resources */,
 				CCB69F2B24128ADC00D039ED /* Assets.xcassets in Resources */,
 				CC509C2F241BCACC00A0BC8F /* GoogleService-Info.plist in Resources */,
@@ -414,8 +462,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6FBDA1241FEB1C008FE7A4 /* FirebaseHelper.swift in Sources */,
+				CCC8AD2E2420C9EF00FF44AA /* noteModel.swift in Sources */,
+				CC6FBD9E241FEAEC008FE7A4 /* FirebaseModel.swift in Sources */,
 				CCB69F2624128ADA00D039ED /* ViewController.swift in Sources */,
 				CCB69F2224128ADA00D039ED /* AppDelegate.swift in Sources */,
+				CC6FBD93241FC19C008FE7A4 /* NoteCell.swift in Sources */,
 				CC509C31241BCE0900A0BC8F /* ImagesViewController.swift in Sources */,
 				CCB69F2424128ADA00D039ED /* SceneDelegate.swift in Sources */,
 			);
