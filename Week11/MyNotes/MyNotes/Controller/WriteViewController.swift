@@ -59,8 +59,6 @@ class WriteViewController: UIViewController, UIGestureRecognizerDelegate, UIText
         // Check if there is a title, text and the image is not the placeholder.
         if let noteTitle = self.titleTextField.text {
             if let noteText = self.noteTextView.text {
-                if imageView.image != UIImage(systemName: "plus") {
-                    
                     // Adds the note fields to the firestore database.
                     self.db.collection("users").document(self.usr.uid).collection("notes").document().setData([
                         "title": noteTitle,
@@ -82,7 +80,6 @@ class WriteViewController: UIViewController, UIGestureRecognizerDelegate, UIText
                             
                             // Reset the fields/image back to empty.
                             self.reset()
-                        }
                     }
                 }
             }
