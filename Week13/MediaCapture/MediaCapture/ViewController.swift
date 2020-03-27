@@ -23,14 +23,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var choosePictureButton: UIButton!
     @IBOutlet weak var addTextButton: UIButton!
     
-//    Will handle fetching the image from the system
+    //    Will handle fetching the image from the system
     var imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .light
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func choosePictureButtonTapped(_ sender: Any) {
         showImagePickerNavigation()
     }
@@ -38,61 +39,85 @@ class ViewController: UIViewController {
     @IBAction func addTextButtonTapped(_ sender: Any) {
         if let topText = imageTextField.text {
             if let bottomText = bottomImageTextField.text {
-            if let image = imageView.image {
-                let topImage = textToImage(drawText: topText, inImage: image, atPoint: CGPoint(x: 0, y: 0))
-                let topBottomImage = textToImage(drawText: bottomText, inImage: topImage, atPoint: CGPoint(x: 0, y: topImage.size.height-100))
-                imageView.image = topBottomImage
+                if let image = imageView.image {
+                    
+                    let topImage = textToImage(drawText: topText, inImage: image, atPoint: CGPoint(x: 0, y: 0))
+                    let topBottomImage = textToImage(drawText: bottomText, inImage: topImage, atPoint: CGPoint(x: 0, y: topImage.size.height-100))
+                    imageView.image = topBottomImage
+                    
+                }
             }
-          }
         }
     }
     
+    var startPoint = CGFloat(0)
+    // Remove keyboard when a touch is detected.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        imageTextField.endEditing(true)
+        bottomImageTextField.endEditing(true)
+        if let p = touches.first?.location(in: view) {
+            startPoint = p.x
+        }
+    }
+    
+    var diff = CGFloat(0)
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let p = touches.first?.location(in: view) {
-            imageView.transform = CGAffineTransform(translationX: p.x, y: 0)
+            diff = p.x - startPoint
+            imageView.transform = CGAffineTransform(translationX: diff, y: 0)
+        
         }
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if (diff < -250) {
+            imageView.image = nil
+            
+            
+        } else if (diff > 250) {
+            if let image = imageView.image {
+                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+                print("Image saved")
+                imageView.image = nil
+            }
+        }
+        imageView.transform = CGAffineTransform(translationX: 0, y: 0)
     }
     
     func textToImage(drawText: String, inImage: UIImage, atPoint: CGPoint) -> UIImage{
-
+        
         // Setup the font specific variables
         let textColor = UIColor.white;
         let textFont = UIFont(name: "Helvetica Bold", size: 100)!
-
+        
         // Setup the image context using the passed image
         let scale = UIScreen.main.scale
         UIGraphicsBeginImageContextWithOptions(inImage.size, false, scale)
-
+        
         // Setup the font attributes that will be later used to dictate how the text should be drawn
         let textFontAttributes = [
             NSAttributedString.Key.font: textFont,
             NSAttributedString.Key.foregroundColor: textColor,
         ]
-
+        
         // Put the image into a rectangle as large as the original image
         inImage.draw(in: CGRect(x: 0, y: 0, width: inImage.size.width, height: inImage.size.height))
-
+        
         // Create a point within the space that is as bit as the image
         let rect = CGRect(x: atPoint.x, y: atPoint.y, width: inImage.size.width, height: inImage.size.height)
-
+        
         // Draw the text into an image
         drawText.draw(in: rect, withAttributes: textFontAttributes)
-
+        
         // Create a new image out of the images we have created
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
-
+        
         // End the context now that we have the image we need
         UIGraphicsEndImageContext()
         //Pass the image back up to the caller
         return newImage!
     }
     
-    // Remove keyboard when a touch is detected.
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        imageTextField.endEditing(true)
-    }
-    
-
 }
 
 
