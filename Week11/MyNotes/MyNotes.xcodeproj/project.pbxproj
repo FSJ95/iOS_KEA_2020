@@ -21,6 +21,8 @@
 		CC6FBD9A241FE946008FE7A4 /* ReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6FBD99241FE946008FE7A4 /* ReadViewController.swift */; };
 		CC6FBDAB241FEE0D008FE7A4 /* NoteCellImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6FBDA9241FEE0D008FE7A4 /* NoteCellImage.swift */; };
 		CC6FBDAC241FEE0D008FE7A4 /* NoteCellImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC6FBDAA241FEE0D008FE7A4 /* NoteCellImage.xib */; };
+		CC79EF8F24371362001ADA50 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79EF8E24371362001ADA50 /* LoginViewController.swift */; };
+		CC79EF91243721AC001ADA50 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC79EF90243721AC001ADA50 /* TabBarController.swift */; };
 		CCC8AD2C241FF68D00FF44AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCC8AD2B241FF68D00FF44AA /* GoogleService-Info.plist */; };
 		CCC8AD302420CCA500FF44AA /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8AD2F2420CCA500FF44AA /* NoteModel.swift */; };
 		CCC8AD322422E31700FF44AA /* NoteCellNoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8AD312422E31700FF44AA /* NoteCellNoImage.swift */; };
@@ -69,6 +71,8 @@
 		CC6FBD99241FE946008FE7A4 /* ReadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadViewController.swift; sourceTree = "<group>"; };
 		CC6FBDA9241FEE0D008FE7A4 /* NoteCellImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCellImage.swift; path = ../../../../Week10/PictureSaver/PictureSaver/View/NoteCellImage.swift; sourceTree = "<group>"; };
 		CC6FBDAA241FEE0D008FE7A4 /* NoteCellImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteCellImage.xib; path = ../../../../Week10/PictureSaver/PictureSaver/View/NoteCellImage.xib; sourceTree = "<group>"; };
+		CC79EF8E24371362001ADA50 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CC79EF90243721AC001ADA50 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		CCC8AD2B241FF68D00FF44AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CCC8AD2F2420CCA500FF44AA /* NoteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
 		CCC8AD312422E31700FF44AA /* NoteCellNoImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCellNoImage.swift; path = ../../../../Week10/PictureSaver/PictureSaver/View/NoteCellNoImage.swift; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 			children = (
 				CC6FBD63241F88C4008FE7A4 /* WriteViewController.swift */,
 				CC6FBD99241FE946008FE7A4 /* ReadViewController.swift */,
+				CC79EF8E24371362001ADA50 /* LoginViewController.swift */,
+				CC79EF90243721AC001ADA50 /* TabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -459,7 +465,9 @@
 				CC6FBD64241F88C4008FE7A4 /* WriteViewController.swift in Sources */,
 				CCC8AD302420CCA500FF44AA /* NoteModel.swift in Sources */,
 				CC6FBD60241F88C4008FE7A4 /* AppDelegate.swift in Sources */,
+				CC79EF91243721AC001ADA50 /* TabBarController.swift in Sources */,
 				CCC8AD322422E31700FF44AA /* NoteCellNoImage.swift in Sources */,
+				CC79EF8F24371362001ADA50 /* LoginViewController.swift in Sources */,
 				CC6FBD62241F88C4008FE7A4 /* SceneDelegate.swift in Sources */,
 				CC6FBDAB241FEE0D008FE7A4 /* NoteCellImage.swift in Sources */,
 				CC6FBD9A241FE946008FE7A4 /* ReadViewController.swift in Sources */,

@@ -35,7 +35,6 @@ class ReadViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
         
         // Firebase auth stuff.
-        Auth.auth().signInAnonymously() { (authResult, error) in }
         usr = Auth.auth().currentUser
         db = Firestore.firestore()
     }

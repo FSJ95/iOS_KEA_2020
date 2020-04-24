@@ -43,7 +43,6 @@ class WriteViewController: UIViewController, UIGestureRecognizerDelegate, UIText
         titleTextField.delegate = self
         
         // Firebase auth stuff.
-        Auth.auth().signInAnonymously() { (authResult, error) in }
         usr = Auth.auth().currentUser
         db = Firestore.firestore()
     }
